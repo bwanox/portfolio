@@ -20,7 +20,6 @@ const Header= () => {
             onClick={scrollToAboutMe}
             style={{ cursor: 'pointer', height: '50px' }}
           />
-        </div>
         <nav>
           <ul className= 'nav-list'>
             <li>
@@ -37,6 +36,7 @@ const Header= () => {
             </li>
           </ul>
         </nav>
+        </div>
       </header>
     );
   };

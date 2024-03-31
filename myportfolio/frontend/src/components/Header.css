@@ -1,20 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .upper-header {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-list li {
-    margin-left: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .nav-list li:hover {
-    transform: scale(1.2);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.logo {
+  height: 50px;
+  margin-right: auto; 
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+}
+
+.nav-list li:hover {
+  transform: scale(1.2);
+  color: #ff0;
+}
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  color: #ff0;
+}
