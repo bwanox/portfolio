@@ -1,0 +1,20 @@
+.upper-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-list li:hover {
+    transform: scale(1.2);
+  }
