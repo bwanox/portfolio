@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Header from './components/Header';
 import AboutMe from './components/aboutme';
 import Contact from './components/contact';
@@ -9,16 +10,23 @@ import WelcomeMessage from './components/WelcomeMessage';
 import Sidenavbar from './components/sidenavbar';
 import './App.css';
 
-const App=()=> {
+const App = () => {
+  const [showAboutMe, setShowAboutMe] = useState(false);
+
+  const handleShowAboutMe = () => {
+    setShowAboutMe(true);
+  };
+
   return (
-<div className="App">
+    <div className="App">
       <Header />
       <div style={{ height: '25vh' }}></div>
-      <WelcomeMessage/>
+      <WelcomeMessage />
       <div style={{ height: '50vh' }}></div>
-      <AboutMe />
+      {showAboutMe && <AboutMe />}
+      <button onClick={handleShowAboutMe}>Show About Me</button>
     </div>
   );
-}
+};
 
 export default App;
