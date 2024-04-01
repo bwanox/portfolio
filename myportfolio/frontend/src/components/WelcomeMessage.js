@@ -11,7 +11,7 @@ const WelcomeMessage = () => {
     const typing = setInterval(() => {
       setMessage((prevMessage) => prevMessage + fullMessage[i]);
       i++;
-      if (i > fullMessage.length) {
+      if (i >= fullMessage.length) {
         clearInterval(typing);
       }
     }, 100); 
@@ -20,12 +20,16 @@ const WelcomeMessage = () => {
 
   return (
     <div className="welcome-message-container">
-      <div className="welcome-message">{message}</div>
-      <img
-        className="cat-in-space"
-        src={Cat}
-        alt="catinspace"
-      />
+      <div className="text-container">
+        <div className="welcome-message">{message}</div>
+      </div>
+      <div className="image-container">
+        <img
+          className="cat-in-space"
+          src={Cat}
+          alt="catinspace"
+        />
+      </div>
     </div>
   );
 };

@@ -8,6 +8,41 @@
   color: #ff0;
   text-shadow: 3px 3px #c00;
   white-space: pre-wrap;
-  height:200px;
-  overflow:auto;
+  height: 200px; 
+  overflow: auto;
+}
+
+.welcome-message-container {
+  display: flex;
+  align-items: center;
+  position: relative; 
+}
+
+.text-container {
+  width: 50%; 
+  margin-right: 20rem;
+}
+
+.image-container {
+  width: 30%; 
+  margin-left: 1rem;
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+  animation: floatAnimation 3s ease-in-out infinite alternate; 
+}
+
+.cat-in-space {
+  width: 400px;
+  height: 400px;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0); 
+  }
+  100% {
+    transform: translateY(-40px); 
+  }
 }
