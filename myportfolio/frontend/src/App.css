@@ -1,13 +1,10 @@
 .App {
   text-align: center;
-  background-image: url('./asserts/img/background_image.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(135deg, #333333, #1a1a1a); /* Stylish gradient */
   width: 100%;
   height: 100%;
 }
+
 body {
-  background-image: url('./asserts/img/background_image.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(135deg, #333333, #1a1a1a); /* Stylish gradient */
 }

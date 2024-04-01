@@ -15,7 +15,7 @@ const App=()=> {
       <Header />
       <div style={{ height: '25vh' }}></div>
       <WelcomeMessage/>
-      <div style={{ height: '100vh' }}></div>
+      <div style={{ height: '50vh' }}></div>
       <AboutMe />
     </div>
   );

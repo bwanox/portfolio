@@ -4,20 +4,21 @@ import Cat from '../asserts/img/cat.png';
 
 const WelcomeMessage = () => {
   const [message, setMessage] = useState('');
-  const fullMessage = "Hi, welcome to my portfolio! I'm Bilal Sahili, feel free to travel through my spaceship;";
+  const fullMessage = "Heello, welcome to my portfolio! I'm Bilal Sahili, feel free to travel through my spaceship";
 
   useEffect(() => {
     let i = 0;
     const typing = setInterval(() => {
-      setMessage((prevMessage) => prevMessage + fullMessage[i]);
-      i++;
-      if (i >= fullMessage.length) {
+      if (i < fullMessage.length-1) {
+        setMessage(prevMessage => prevMessage + fullMessage[i]);
+        i++;
+      } else {
         clearInterval(typing);
       }
-    }, 100); 
+    }, 100);
     return () => clearInterval(typing);
   }, []);
-
+  
   return (
     <div className="welcome-message-container">
       <div className="text-container">
