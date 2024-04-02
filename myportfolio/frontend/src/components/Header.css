@@ -24,6 +24,21 @@
   font-family: 'Press Start 2P', cursive;
   color: #fff;
 }
+.nav-list li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust this value to set the distance of the line from the text */
+  left: 0;
+  width: 100%; /* Make the line stretch the width of the <li> */
+  height: 2px; /* Set the height of the line */
+  background-color: #fff; /* Set the color of the line */
+  transition: transform 0.3s ease;
+  transform: scaleX(0); /* Initially hide the line */
+}
+.nav-list li:hover::after {
+  transform: scaleX(1); /* Show the line on hover */
+}
+
 
 .nav-list li:hover {
   transform: scale(1.2);
