@@ -9,7 +9,7 @@
   text-align: left;
   margin-bottom: 20px;
   color: #fff; 
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff; /* White neon glow effect */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 60px #fff; /* White neon glow effect */
   position: fixed;
   top: -30px;
   left: 50px;
@@ -127,7 +127,7 @@
   margin-right: 8px;
   height: 20px; 
   width: 20px; 
-  background-color: #b17d97; 
+  background-color: #7e1449; 
   border-radius: 50%;
   display: inline-block;
   position: absolute;

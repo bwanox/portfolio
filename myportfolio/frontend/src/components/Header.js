@@ -34,7 +34,7 @@ const Header = ({ toggleComponent }) => {
                         <li>
                             <a href="#skills" onClick={() => toggleComponent('skills')}>Skills</a>
                         </li>
-                        <li>
+                        <li className='contact-li'>
                             <a href="#contact" onClick={() => toggleComponent('contact')}>Contact</a>
                         </li>
                     </ul>
