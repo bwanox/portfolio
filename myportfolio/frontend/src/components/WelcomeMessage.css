@@ -19,17 +19,20 @@
 }
 
 .welcome-message {
-    font-family: 'Dancing Script', cursive;
-    font-size: 45px;
-    text-align: left;
-    margin: 10px 20px;
-    color: #ffffcc; 
-    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00, 0 0 50px #ffcc00, 0 0 60px #ffcc00, 0 0 70px #ffcc00; /* Multiple layers of shadow for a lighting effect */
-    white-space: pre-wrap;
-    height: 200px;
-    overflow: auto;
-  }
-  
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+  text-align: left;
+  margin: 10px 20px;
+  color: #ff55ff;
+  background: linear-gradient(to bottom right, rgba(255, 85, 255, 0.5), rgba(85, 0, 255, 0.5)); 
+  border: 2px solid #ff55ff; 
+  border-radius: 15px; 
+  padding: 20px; 
+  white-space: pre-wrap;
+  height: 200px;
+  overflow: auto;
+}
+
 
 .welcome-message-container {
   display: flex;
@@ -41,14 +44,14 @@
   width: 60%; 
   margin-right: 20rem;
   position: relative; 
-  top: -40px; 
+  top: -70px; 
 }
 
 .image-container {
   width: 30%; 
   margin-left: 20rem;
   position: absolute; 
-  bottom: -50px; 
+  bottom: 10px; 
   left: 50%; 
   transform: translateX(-50%);
   animation: floatAnimation 3s ease-in-out infinite alternate; 
@@ -82,7 +85,7 @@
   top:-150px;
   left: 500px;
   z-index: -1;
-  opacity: 50%;
+  opacity: 70%;
 }
 .contact_way {
   position: absolute;
