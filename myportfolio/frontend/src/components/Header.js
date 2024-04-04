@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from '../asserts/img/logo1.png';
 import './Header.css';
+import { useRef } from 'react';
+
 
 const Header = ({ toggleComponent }) => {
+    const contactLiRef = useRef(null);
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -34,7 +37,7 @@ const Header = ({ toggleComponent }) => {
                         <li>
                             <a href="#skills" onClick={() => toggleComponent('skills')}>Skills</a>
                         </li>
-                        <li id='contact-li'>
+                        <li ref={contactLiRef} id="contact-li">
                             <a href="#contact" onClick={() => toggleComponent('contact')}>Contact</a>
                         </li>
                     </ul>
