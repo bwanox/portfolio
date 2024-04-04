@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import './Contact.css'; 
 
-const Contact = () => {
+const Contact = ({ contactLiRef }) => {
     const contactPopupRef = useRef(null);
 
     useEffect(() => {
-        const contactLi = document.getElementById("contact-li");
+        const contactLi = contactLiRef.current;
         const contactPopup = contactPopupRef.current;
 
         if (contactLi && contactPopup) {
@@ -13,7 +13,7 @@ const Contact = () => {
             contactPopup.style.top = (rect.bottom + window.pageYOffset) + "px";
             contactPopup.style.left = (rect.left + window.pageXOffset) + "px";
         }
-    }, []);
+    }, [contactLiRef]);
 
     return (
         <div className='contact-popup' ref={contactPopupRef}>
