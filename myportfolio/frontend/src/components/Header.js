@@ -34,11 +34,11 @@ const Header = ({ toggleComponent }) => {
                         <li>
                             <a href="#projects" onClick={() => toggleComponent('projects')}>Projects</a>
                         </li>
-                        <li>
-                            <a href="#skills" onClick={() => toggleComponent('skills')}>Skills</a>
-                        </li>
                         <li ref={contactLiRef} id="contact-li">
                             <a href="#contact" onClick={() => toggleComponent('contact')}>Contact</a>
+                        </li>
+                        <li>
+                            <a href="#skills" onClick={() => toggleComponent('skills')}>Skills</a>
                         </li>
                     </ul>
                 </nav>
