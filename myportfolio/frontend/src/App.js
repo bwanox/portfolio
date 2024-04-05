@@ -3,11 +3,13 @@ import Header from './components/Header';
 import AboutMe from './components/aboutme';
 import WelcomeMessage from './components/WelcomeMessage';
 import Contact from './components/contact';
+import Projects from './components/projects';
 import './App.css';
 
 const App = () => {
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [showProjects, setShowProjects] = useState(false);
   
 
   const toggleComponent = (componentName) => {
@@ -17,6 +19,9 @@ const App = () => {
         break;
       case 'contact':
         setShowContact(!showContact);
+        break;
+      case 'projects':
+        setShowProjects(!showProjects);
         break;
       default:
         break;
@@ -32,6 +37,7 @@ const App = () => {
       <div style={{ height: '50vh' }}></div>
       {showAboutMe && <AboutMe />} 
       {showContact && <Contact />} 
+      {showProjects && <Projects />}
 
       </div>
     </div>
