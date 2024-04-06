@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 
 .portfolio-text {
-  font-family: 'Great Vibes', cursive;
-  font-size: 80px;
-  font-weight: normal;
-  text-align: left;
-  margin-bottom: 20px;
-  color: #fff; 
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 60px #fff; /* White neon glow effect */
-  position: fixed;
-  top: -30px;
-  left: 50px;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 9999;
+    font-family: 'Cookie', cursive;
+    font-size: 100px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #fff, 0 0 40px #fff, 0 0 48px #fff, 0 0 56px #fff; /* Neon glow effect with decreased intensity */
+    position: fixed;
+    top: -30px;
+    left: 50px;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 9999;
 }
+
 
 .welcome-message {
   font-family: 'Dancing Script', cursive;
