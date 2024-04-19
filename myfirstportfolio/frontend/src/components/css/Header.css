@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.horizontal-navbar {
+  display: flex; 
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.horizontal-navbar li {
+  display: inline-block;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+  font-family: 'IM Fell DW Pica SC', serif;
+  color: #eee;
+  font-size: larger;
+}
+
+.horizontal-navbar li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #434343;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+}
+
+.horizontal-navbar li:hover::after {
+  transform: scaleX(1);
+}
+
+.horizontal-navbar li:hover {
+  transform: scale(1.1);
+}
+
+.horizontal-navbar li a {
+  color: #eee; 
+  text-decoration: none;
+}
+
+.horizontal-navbar li a:hover {
+  color: rgb(108, 108, 99);
+}
